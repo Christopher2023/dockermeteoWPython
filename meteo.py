@@ -1,13 +1,11 @@
-from urllib import response
 import requests
+import os
 
-api_key = "240aa650f4db4e154a07d0459c30a347"
+api_key = os.environ["API_KEY"]
 
 url = "http://api.openweathermap.org/data/2.5/weather?"
 
-Lon = input("Enter the longitute : ")
-Lat = input("Enter latitude : ")
-url = url + "lat=" + Lat + "&lon=" + Lon + "&appid=" + api_key
+url = url + "lat=" + os.environ["LAT"] + "&lon=" + os.environ["LONG"] + "&appid=" + api_key
 
 response = requests.get(url).json()
 
