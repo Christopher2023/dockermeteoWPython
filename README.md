@@ -6,7 +6,7 @@
 - Après j'ai dû construire mon docker. Malheureusement la commande de build ne fonctionnait pas au début mais après y avoir mis le ".", tout à fonctionné pour le mieux;
 - Après j'ai testé mon docker avec la commande "run" et j'avais le resultat escompté alors je me suis donc consacré à la partie bonus.
 - J'ai d'abord essayé hidolint. J'ai saisi la commande 
-"""sh
+```sh
 docker run --rm -i hadolint/hadolint < Dockerfile 
-"""
+
 - Enfin, J'ai utilisé hidolint pour que le fichier soit sans bavures
