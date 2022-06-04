@@ -11,7 +11,7 @@
 
 ## Partie bonus
 1. J'ai d'abord essayé hidolint. J'ai saisi la commande ```sh docker run --rm -i hadolint/hadolint < Dockerfile```. J'ai eu un ensemble de warnings parmi lesquels:
-  * l'utilisation de la dernière version : je devais préciser une version qui ne soit pas celle là.
+  * L'utilisation de la dernière version : je devais préciser une version qui ne soit pas celle là.
   * L'absence de version sur l'installation de la librairie "requests". J'ai d'ailleurs eu des difficultés lorsque je voulais reconstruire mon projet. D'alleurs je vous ai fait appel et il s'est trouvé que le problème venait du fait de la présence d'un espace qui séparait le nom de la version et le nom du package.
   *  Aussi je devais ajouter le --no-cache pour eviter le téléchargement de fichiers inutiles aussi
 2. Enfin, J'ai essayé d'utiliser Trivy. Au départ je n'ai pas reussi à utiliser la commande ```sh trivy image python-docker```. J'ai alors regardé sur internet et j'ai trouvé une commade qui me permettait de télécharger l'image de trivy et l'utiliser.```sh curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.16.0```. Ensuite j'ai pu l'utiliser et remarquer les CVE
