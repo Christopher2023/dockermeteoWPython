@@ -14,7 +14,7 @@ docker run --rm -i hadolint/hadolint < Dockerfile
 ```
 
 J'ai eu un ensemble de warnings parmi lesquels:
--- l'utilisation de la dernière version : je devais préciser une version qui ne soit pas celle là.
+* l'utilisation de la dernière version : je devais préciser une version qui ne soit pas celle là.
 -- L'absence de version sur l'installation de la librairie "requests". J'ai d'ailleurs eu des difficultés lorsque je voulais reconstruire mon projet. D'alleurs je vous ai fait appel et il s'est trouvé que le problème venait du fait de la présence d'un espace qui séparait le nom de la version et le nom du package.
 -- Aussi je devais ajouter le --no-cache pour eviter le téléchargement de fichiers inutiles aussi
 - Enfin, J'ai essayé d'utiliser Trivy. Au départ je n'ai pas reussi à utiliser la commande
