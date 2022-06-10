@@ -17,4 +17,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: {{ secrets.DOCKERHUB_USERNAME }}/efrei-devops-tp2:latest
+          tags: efrei-devops-tp2:latest
