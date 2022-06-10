@@ -10,13 +10,13 @@ jobs:
     runs-on: macos-latest
     steps:
         name: Login to DockerHub
-        uses: {{ secrets.DOCKERHUB_USERNAME }}/efrei-devops-tp2
+        uses: Christopher20/efrei-devops-tp2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push
-        uses: {{ secrets.DOCKERHUB_USERNAME }}/efrei-devops-tp2
+        uses: Christopher20/efrei-devops-tp2
         with:
           push: true
           tags: user/app:latest
