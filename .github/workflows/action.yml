@@ -4,7 +4,7 @@ on: push
 
 jobs:
   docker_test:
-    name: toto
+    name: build-push docker
     runs-on: ubuntu-latest
     steps:
       - name: Login to DockerHub
@@ -17,4 +17,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: {{ secrets.DOCKERHUB_USERNAME }}/efrei-devops-tp2:latest
+          tags: Christopher20/efrei-devops-tp2:0.0.1
