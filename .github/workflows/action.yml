@@ -17,4 +17,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: Christopher20/efrei-devops-tp2:latest
+          tags: christopher20/efrei-devops-tp2:latest
